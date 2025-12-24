@@ -1,0 +1,17 @@
+body {
+	background-color: #ffffff;
+	font-size: 15pt;
+}
+
+table, td {
+	border: 1px solid #000000;
+}
+
+table#board1>tbody>tr>td {
+	width: 40pt;
+	height: 40pt;
+}
+
+span#winOrLose {
+	color: red;
+}
