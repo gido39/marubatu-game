@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Marubatu Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>◯× GAME</h1>
+  
+  <div><span id="attackTurn">先攻 or 後攻</span><span id="winOrLose"></span></div>
+  <table id="board">
+    <tr>
+      <td id="pos00" onclick="pos00()">‐</td>
+      <td id="pos01" onclick="pos01()">‐</td>
+      <td id="pos02" onclick="pos02()">‐</td></tr>
+    <tr>
+      <td id="pos10" onclick="pos10()">‐</td>
+      <td id="pos11" onclick="pos11()">‐</td>
+      <td id="pos12" onclick="pos12()">‐</td></tr>
+    <tr>
+      <td id="pos20" onclick="pos20()">‐</td>
+      <td id="pos21" onclick="pos21()">‐</td>
+      <td id="pos22" onclick="pos22()">‐</td></tr>
+  </table>
+  
+  <div id="resetParent">
+    <div id="gameStart" onclick="gameStart()">はじめから[Click to start]</div>
+    <div id="gameReset" onclick="gameReset()"></div>
+  </div>
+  
+  <div>TurnNumber : <span id="turnNum"></span></div>
+  <div>Log : <span id="logPreview"></span></div>
+  <div>ErrorLog1 : <span id="errorLogPreview1"></span></div>
+  <div>ErrorLog2 : <span id="errorLogPreview2"></span></div>
+  
+  <script src="ui.js"></script>
+  <script src="logic.js"></script>
+  <script src="debugLog.js"></script>
+</body>
+</html>
